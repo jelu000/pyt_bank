@@ -4,7 +4,7 @@ import pandas as pd
 
 def main():
 
-    df = pd.read_csv("Transaktioner_jan2026.csv", encoding="latin-1", skiprows=1, sep=",")
+    df = pd.read_csv("../Transaktioner_2026-02-09_16-25-43.csv", encoding="latin-1", skiprows=1, sep=",")
     swis_inb = df[df["Text"].str.startswith("Swish", na=False)]
     
     print(f'Inkomster:')
